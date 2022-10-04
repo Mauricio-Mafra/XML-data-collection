@@ -29,12 +29,6 @@ def main():
             bairro = root.find('ns:NFe/ns:infNFe/ns:dest/ns:enderDest/ns:xBairro', nsNFE).text
             print("Bairro:", bairro)
 
-            #CNPJ / CPF
-            #cnpj = root.find('ns:NFe/ns:infNFe/ns:dest/ns:CNPJ', nsNFE)
-            #if cnpj is None:
-            #    root.find('ns:NFe/ns:infNFe/ns:dest/ns:CPF', nsNFE)
-            #    print("CNPJ:", cnpj)
-
             #Cidade
             cidade = root.find('ns:NFe/ns:infNFe/ns:dest/ns:enderDest/ns:xMun', nsNFE).text
             print("Cidade:", cidade)
